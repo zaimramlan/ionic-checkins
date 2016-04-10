@@ -1,0 +1,26 @@
+<ion-view title="Get Location" id="page2">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <img ng-src="{{ $parent.maps }}" style="width: 100%;">
+
+        <form class="list">
+            <label class="item item-input" name="Latitude">
+                <span class="input-label">Latitude</span>
+                <input ng-model="$parent.latitude" type="text" placeholder="0.00">
+            </label>
+            <label class="item item-input" name="Longitude">
+                <span class="input-label">Longitude</span>
+                <input ng-model="$parent.longitude" type="text" placeholder="0.00">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Address</span>
+                <textarea ng-model="$parent.address" placeholder="Address"> </textarea>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Remarks</span>
+                <textarea ng-model="$parent.descriptions" placeholder=""> </textarea>
+            </label>
+            <!-- <a ng-click="saveLocation()" id="getLocation-button2" class="button button-positive  button-block icon">Save!</a> -->
+            <a ng-click="storeLocation()" id="getLocation-button2" class="button button-positive  button-block icon">Store!</a>
+        </form>
+    </ion-content>
+</ion-view>

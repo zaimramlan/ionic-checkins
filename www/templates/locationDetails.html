@@ -1,0 +1,25 @@
+<ion-view title="Location Details" id="page3">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <img ng-src="{{ checkin.maps }}" style="width: 100%;">
+
+        <form class="list"></form>
+        <div id="locationDetails-markdown1" style="color:#000000;">
+            <p>{{ checkin.address }}</p>
+        </div>
+        <div id="locationDetails-markdown2" style="color:#000000;">
+            <p>
+                {{ checkin.longitude }}            
+            </p>
+        </div>
+        <div id="locationDetails-markdown3" style="color:#000000;">
+            <p>
+                {{ checkin.latitude }}            
+            </p>
+        </div>
+        <div id="locationDetails-markdown4" style="color:#000000;">
+            <p>
+                {{ checkin.descriptions }}            
+            </p>
+        </div>
+    </ion-content>
+</ion-view>
